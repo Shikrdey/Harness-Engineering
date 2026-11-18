@@ -1,0 +1,25 @@
+# Python virtual environment (big, machine-specific)
+venv/
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Saved grader batches (specific to one email's case set) and runtime logs
+logs/
+*.log
+
+# Secrets and local config - never commit
+.env
+.env.*
+*.pem
+*.key
+.cloudflared/
+ngrok.yml
+
+# Editor / assistant local settings
+.vscode/
+.idea/
+.claude/

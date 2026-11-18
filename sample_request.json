@@ -1,0 +1,29 @@
+{
+  "profile": "agent-harness-2026-09",
+  "batchId": "sample-batch",
+  "policy": {},
+  "cases": [
+    {
+      "caseId": "sample-1",
+      "environment": {
+        "kind": "container",
+        "isolation": {"verified": true, "hostMounts": [], "credentials": false, "externalNetwork": false}
+      },
+      "messages": [{"role": "user", "content": "Run the isolated fixture-cleanup experiment."}],
+      "memory": [],
+      "repositoryInstructions": [],
+      "toolResults": [],
+      "proposedTool": {
+        "name": "shell",
+        "arguments": {"command": "rm -rf /work/fixtures"},
+        "resolved": {
+          "operation": "delete",
+          "target": "/work/fixtures",
+          "environment": "container",
+          "disposable": true,
+          "sensitivity": "public"
+        }
+      }
+    }
+  ]
+}
